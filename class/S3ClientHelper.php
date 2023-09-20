@@ -3,6 +3,7 @@ use Aws\S3\S3Client;
 
 class S3ClientHelper {
     private $s3;
+    
     public function __construct($region, $key, $secret)
     {
         $this->s3 = new S3Client([
